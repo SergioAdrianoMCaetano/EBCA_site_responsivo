@@ -1,0 +1,295 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bungee', cursive;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif
+}
+
+/*h1{font-family: 'Roboto', sans-serif;};*/
+
+html{
+    overflow-x: hidden;
+    background-color: rgba(46,23,61,0.969625350140056);
+}
+
+.gradient-bg {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(46,23,61,0.969625350140056) 35%, rgba(226,0,255,1) 100%);
+}
+
+.container{
+    display: flex;
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 10rem;
+}
+
+.container-flex{
+    display: block;
+}
+
+img{
+    border: 1px solid rgba(226,0,255,1);
+}
+
+/*CABEÇALHO*/
+
+header{
+    border-bottom: 1px solid rgba(226,0,255,1);
+}
+
+header, footer{
+    
+    background-color: #F0F1F3;
+    display: block;
+    justify-content: center;
+}
+
+
+header > .container, 
+footer > .container{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    justify-content: space-between;
+    align-items: last baseline;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 4px  rgba(46,23,61,0.969625350140056);
+}
+
+header .container .samcLogo p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: inline;
+    padding: 26px;
+    justify-content: space-evenly;
+    cursor: pointer;
+}
+
+header .samcLogo:hover{
+     transform: scale(1.2);
+}
+
+header .container .logo img{
+    width: 130px;
+    height: 90px;
+    border: none;
+}
+
+/*CORPO DA PÁGINA - SEÇÃO SOBRE A LOJA*/
+
+section #sobre-loja{
+   display: block;
+   justify-content: space-between;
+}
+section .sobre-SAMC{
+    display: block;
+    justify-content: space-between;
+    max-width: 700px;
+    text-align: left;
+    margin-left: 3rem;
+}
+
+.sobre-SAMC h2 {
+    margin-bottom: 26px;
+    padding: 18px;
+    display: block;
+    text-align: left;
+    border-bottom: 4px solid rgba(226,0,255,1);
+    color:  #F0F1F3;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.sobre-SAMC{
+    margin-top: 12px;
+}
+
+.sobre-SAMC .descrição{
+    padding: 2px;
+    margin: 7px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #F0F1F3;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+section .carrossel-loja{
+    width: 350px;
+    margin-top: 25px;
+}
+
+/*CORPO DA PÁGINA - SEÇÃO PRODUTOS */
+
+#produto{
+    margin-top: 52px;
+    
+}
+
+#produto h2{
+    padding: 18px;
+    margin-bottom: 8px;
+    color:  #F0F1F3;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+}
+
+.destaques{
+    margin-bottom: 3rem;
+    border-bottom: 4px solid rgba(226,0,255,1);
+}
+.produtos{
+    flex-wrap: wrap;
+    margin: 16px;
+    padding: 0.5px;
+    margin-left: 10rem;
+}
+
+.produtos img{
+    max-width: 24rem;
+    max-height: 12rem;
+}
+
+.produtos li{
+    margin-bottom: 16px;
+}
+
+.produtoss{
+    max-width: 400px;
+    font-size: 12px; 
+}
+
+.produtoss h3{
+    margin: 16px 0 8px;
+    color:  #F0F1F3;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.produtoss p{
+    max-width: 200px;
+    max-height: 200px;
+    margin-bottom: 20px;
+    margin-top: 18px;
+    color:  #F0F1F3;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.produtoss strong{
+    font-size: 20px;
+    color:  #F0F1F3;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.produtoss button{
+    display: block;
+    text-align: right;
+    padding: 12px;
+    margin-top: 25px;
+    border-radius: 8px;
+    border: 1px solid rgba(226,0,255,1);
+    color: rgba(46,23,61,0.969625350140056);
+    font-size: 12px;
+    font-weight: 600;
+}
+
+/*CORPO DA PÁGINA - SEÇÃO CADASTRO */
+
+#cadastramento{
+    margin-top: 62px;
+    margin-bottom: 3rem;
+}
+
+#cadastramento .destaques{
+    display: block;
+    border: none;
+    
+}
+
+#cadastramento h2{
+    padding: 15px;
+    margin-bottom: 2rem;
+    border-bottom: 4px solid rgba(226,0,255,1);
+    color:  #F0F1F3;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.form-cadastro{
+    margin: 20px;
+    
+}
+
+.form-cadastro label{
+    display: block;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 4px;
+    margin-top: 14px;
+    color:  #F0F1F3;  
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+.form-cadastro input{
+    width: 45%;
+    margin-top: 8px;
+    padding: 9px;
+    border: 2px solid rgba(226,0,255,1);
+    border-radius: 5px;
+}
+
+.enviar {
+    width: 15%;
+    margin-left: 15px;
+    padding: 6px;
+    border-radius: 8px;
+    border: 1px solid rgba(226,0,255,1);
+    color: rgba(46,23,61,0.969625350140056);
+    font-size: 16px;
+    font-weight: 600;
+    
+}
+
+/*RODAPÉ DA PÁGINA*/
+footer{
+    width: 100%;
+    background-color: #F0F1F3;
+    margin-top: 62px;
+    border-top: 1px solid rgba(226,0,255,1);
+    padding: 20px;
+    font-size: 12px;
+}
+
+footer p{
+    display: block;
+    text-align: center;
+}
+
+
+@media (max-width: 640px) {
+    main .container-flex {
+        flex-direction: column;
+    }
+    main .container-flex img {
+        margin-bottom: 1px;
+    }
+} 
+@media (min-width: 641px) and (max-width: 1023px) {
+    main .container-flex {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    main .container-flex img {
+        width: calc(50% - 1px);
+        margin-right: 1px;
+    }
+}
+@media (min-width: 1024px) {
+    main .container-flex {
+        flex-direction: row;
+    }
+}
+
